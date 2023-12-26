@@ -1,0 +1,11 @@
+.first-section{
+    background-image: url('backgrounds/first-section-bg.png');
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+    font-size: 44px;
+    font-family:'Open Sans',sans-serif;
+    font-weight: bold;
+    color:white;
+    padding:20% 0px 20% 0px;
+}
