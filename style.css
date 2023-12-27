@@ -1,3 +1,138 @@
+body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
 .container{
-    margin:0px 200px;
+    margin:0px 166px;
+}
+.header{
+    background-image: url(bg1.jpg);
+    height:100dvh;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.header-line{
+    justify-content: space-around;
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+}
+.nav-item{
+    text-decoration: none;
+    color:white;
+    font-weight: 700;
+    font-size: 14px;
+    margin-right: 25px;
+    transition: color 0.3s linear;
+}
+.nav-item:hover{
+    color:red;
+}
+.cart{
+    position: relative;
+    border-right: 2px solid #fff;
+    height:50px;
+    padding-right: 10px;
+}
+.cart-img{
+    position:absolute;
+    top:18px;
+    right:7px;
+}
+.num {
+    font-size: 14px;
+    color:#fff;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s linear;
+}
+.phone-holder{
+    display:flex;
+    align-items: center;
+}
+.phone-text{
+    font-weight: 400;
+    font-size: 14px;
+    color:#fff
+}
+.button{
+    text-decoration: none;
+    background-color:#FF7400;
+    color:#fff;
+    padding:14px 18px;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 3px;
+    transition: color  .3s ease;
+}
+.button:hover{
+    background-color:#9b4b0a ;
+}
+.num:hover{
+    color:red;
+}
+.header-down{
+    position:relative;
+}
+.header-title{
+    font-family: 'Tinos', serif;
+    font-weight: 400;
+    color:#D67E35;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 322px;
+    position:absolute;
+    left:70px;
+    margin-bottom: 12px;
+}
+.header-subtitle{
+    font-size: 80px;
+    margin-bottom: 12px;
+}
+.header-suptitle{
+    text-transform: uppercase;
+    font-family:"Open Sans",sans-serif;
+    font-size: 18px;
+    color:#fff;
+}
+.header-suptitle::before{
+    content: '';
+    width: 61px;
+    height:2px;
+    background-color:#fff;
+    display:inline-block;
+    position:absolute;
+    bottom:10px;
+    left:90px;
+}
+.header-suptitle::after{
+    content: '';
+    width: 61px;
+    height:2px;
+    background-color:#fff;
+    display:inline-block;
+    position:absolute;
+    bottom:10px;
+    right:90px;
+}
+.header-button{
+    text-decoration: none;
+    background-color:#FF7400;
+    color:#fff;
+    padding:14px 28px;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 3px;
+    position: absolute;
+    top:523px;
+    left:245px;
+    transition: color  .3s ease,scale .3s ease;
+    transform-origin: center;
+    font-family: 'Open Sans',sans-serif;
+
+}
+.header-button:hover{
+    background-color:#9b4b0a ;
+    scale:1.2;
 }
