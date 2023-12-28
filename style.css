@@ -136,3 +136,110 @@ body{
     background-color:#9b4b0a ;
     scale:1.2;
 }
+.card-image{
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+}
+.card-title{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-family: 'Tinos', serif;
+    font-weight: 400;
+    font-size:26px;
+    white-space: pre-wrap;
+}
+.card-desc{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: "Tinos",serif;
+    font-weight: 400;
+    font-size:26px;
+    color:#656363;
+    padding:10px 20px;
+
+}
+.card{
+    width:349px;
+    margin-right: 120px;
+    box-shadow: 10px 10px 40px 20px #0000001A;
+    background-color: #fff;
+    margin-top:-80px;
+}
+.card:last-child{
+    margin-right: 0px;
+}
+.card-holder{
+    display:flex;
+    justify-content: center;
+}
+.card-title span{
+    color:#BC9060;
+}
+.history{
+    margin-top: 166px;
+}
+.history-info{
+    margin-left: 250px;
+    width:444px;
+    text-align: center;
+    
+}
+.history-title{
+    font-family: "Tinos",serif;
+    font-weight: 400;
+    font-size:54px;
+    margin-bottom: 21px;
+}
+.history-title span{
+    color:#BC9060;
+}
+.history-desc{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+.history-number{
+    margin-top: 39px;
+    display:flex;
+    justify-content: space-between;
+}
+.history-item{
+    width: 33%;
+    font-weight: 400;
+    font-size: 40px;
+    color:#BC9060;
+}
+.history-item span{
+    display:block;
+    color:#000;
+    font-size: 20px;
+}
+.history-holder{
+    display:flex;
+    justify-content: space-between;
+}
+.history-images{
+    position:relative;
+    margin-right: 200px;
+}
+.img1{
+    position:absolute;
+    top:-15px;
+    right:373px;
+    z-index: 999;
+}
+.img2{
+    position:absolute;
+    top:-47px;
+    right:295px;
+    z-index: 0;
+}
+.img3{
+    position:absolute;
+    top:137px;
+    right:128px;
+    z-index: 998;
+}
