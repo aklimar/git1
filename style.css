@@ -299,9 +299,9 @@ body{
 .burgers{
     display:flex;
     justify-content: center;
+}
 .main-pizza{
     border-radius: 3px;
-}
 }
 .burger-item{
     display: flex;
@@ -467,7 +467,7 @@ body{
 }
 .cooks{
     display:flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 footer{
     background-image: url(bg4.jpg);
