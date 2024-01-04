@@ -488,6 +488,9 @@ footer{
     left:900px;
 }
 @media (max-width:1500px){
+    .container{
+        margin:0px;
+    }
     .gallery-images{
         display:block;
     }
@@ -503,6 +506,11 @@ footer{
     }
     .gallery-left{
         margin-left: 0;
+    }
+    .wide{
+        clip-path: inset(0 15% 0 39%);
+        margin-right: 125px;
+        margin-bottom: 0px;
     }
 }
 @media (max-width:1300px){
@@ -555,14 +563,23 @@ footer{
         display:none;
     }
     .history-holder{
-        position: relative;
+        flex-direction: column;
+        gap:40px;
+        align-items: center;
     }
     .history-info{
-        margin-left: 0px;
-        position: absolute;
-        top:50%;
-        left:50%;
-        transform:translate(-50%, -50%);
+        margin:0;
     }
+    .card-holder{
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+        align-items: center;
+        margin:100px 0px;
+    }
+    .card{
+        margin:0px;
+    }
+
 }
 
