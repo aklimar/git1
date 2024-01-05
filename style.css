@@ -1,3 +1,6 @@
+*{
+    outline: 1px solid lightgreen;
+}
 body{
     margin: 0;
     font-family: 'Open Sans', sans-serif;
@@ -71,6 +74,14 @@ body{
 }
 .num:hover{
     color:red;
+}
+.nav-menu-mobile{
+    display: none;
+}
+.bar{
+    width:45px;
+    height: 8px;
+    background-color: #FF7400;
 }
 .header-down{
     position:relative;
@@ -183,10 +194,8 @@ body{
     padding-bottom: 200px;
 }
 .history-info{
-    margin-left: 250px;
-    width:444px;
     text-align: center;
-    
+    justify-self: center;
 }
 .history-title{
     font-family: "Tinos",serif;
@@ -219,29 +228,31 @@ body{
     font-size: 20px;
 }
 .history-holder{
-    display:flex;
-    justify-content: space-between;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
 }
 .history-images{
     position:relative;
-    margin-right: 200px;
+    text-align: center;
+    justify-self: center;
 }
 .img1{
     position:absolute;
     top:-15px;
-    right:373px;
+    right:-14px;
     z-index: 999;
 }
 .img2{
     position:absolute;
     top:-47px;
-    right:295px;
+    right:-72px;
     z-index: 0;
 }
 .img3{
     position:absolute;
     top:137px;
-    right:128px;
+    right:-236px;
     z-index: 998;
 }
 .black-block{
@@ -469,13 +480,14 @@ body{
     display:flex;
     justify-content: space-around;
 }
-footer{
+footer .container{
     background-image: url(bg4.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 80px;
-    padding-bottom: 200px;
-    position: relative;
+    height: 30vh;
+    display: grid;
+    grid-template-rows: 1fr auto;
 }
 .footer-text{
     font-family: "Tinos",serif;
@@ -483,9 +495,7 @@ footer{
     font-size:26px;
     text-align: center;
     color:#fff;
-    position: absolute;
-    bottom:16px;
-    left:900px;
+    align-self: end;
 }
 @media (max-width:1500px){
     .container{
@@ -515,36 +525,14 @@ footer{
 }
 @media (max-width:1300px){
     .cooks{
-        display:block;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-    }
-    .cook-img{
-        margin-bottom:20px;
+        flex-direction: column;
+        align-items: center;
+        gap:30px;
     }
     .menu-items{
-        display:block;
-        position: relative;
-        height:150vh;
-    }
-    .menu-item {
-        position: absolute;
-        left: 50%;
-        transform:translateX(-50%);
-        margin-bottom: 20px;
-    }
-    .n1{
-        position: absolute;
-        top: 0%;
-    }
-    .n2{
-        position: absolute;
-        top: 33%;
-    }
-    .n3{
-        position: absolute;
-        top: 66%;
+        flex-direction: column;
+        align-items: center;
+        gap:20px;
     }
     .main-pizza{
         display:none;
@@ -563,9 +551,10 @@ footer{
         display:none;
     }
     .history-holder{
-        flex-direction: column;
-        gap:40px;
-        align-items: center;
+        display:block;
+        text-align: center;
+        width:300px;
+        margin:0px;
     }
     .history-info{
         margin:0;
@@ -582,4 +571,49 @@ footer{
     }
 
 }
-
+@media(max-width:750px){
+    .header .container{
+        display:grid;
+        grid-template-rows: 1fr auto;
+        margin:0px;
+    }
+    .header-down{
+        align-self: center;
+        margin:100px;
+        justify-self:center;
+    }
+    .header-title{
+        margin: 0px;
+        position: static;
+    }
+    .header-button{
+        position: static;
+        margin:0px;
+        align-self: end;
+        justify-self: center;
+    }
+    .header-down .header-btn{
+        display:grid;
+        grid-template-rows: 50px auto;
+    }
+    .header-suptitle::after,
+    .header-suptitle::before{
+        position:static;
+        margin-bottom:5px;
+    }
+    .header-suptitle::after{
+        margin-left:5px;
+    }
+    .nav,
+    .cart,
+    .phone,
+    .phone-text,
+    .order-button{
+        display:none;
+    }
+    .nav-menu-mobile{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+}
