@@ -262,14 +262,14 @@ body{
     margin-bottom: 100px;
 }
 .black-holder{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     align-items: center;
 }
 .left{
     text-align: center;
-    margin-top: 80px;
-    margin-bottom: 104px;
+    align-self: center;
+    justify-self: center;
 }
 .left-title{
     font-family: "Tinos",serif;
@@ -296,6 +296,10 @@ body{
 }
 .button-table:hover{
     background-color:#9b4b0a ;
+}
+.right {
+    align-self: center;
+    justify-self: center;
 }
 .dishes-title{
     font-family: "Tinos",serif;
@@ -538,8 +542,8 @@ footer .container{
         display:none;
     }
     .black-holder{
-        display: block;
-        text-align:center;
+        grid-template-columns: 1fr;
+
     }
     .black-block{
         padding:40px 0;
@@ -553,7 +557,6 @@ footer .container{
     .history-holder{
         display:block;
         text-align: center;
-        width:300px;
         margin:0px;
     }
     .history-info{
