@@ -84,7 +84,8 @@ body{
     background-color: #FF7400;
 }
 .header-down{
-    position:relative;
+    position:relative;i loved man 
+    margin-top: 322px;
 }
 .header-title{
     font-family: 'Tinos', serif;
@@ -92,7 +93,6 @@ body{
     color:#D67E35;
     font-size: 50px;
     text-align: center;
-    margin-top: 322px;
     position:absolute;
     left:70px;
     margin-bottom: 12px;
@@ -196,6 +196,7 @@ body{
 .history-info{
     text-align: center;
     justify-self: center;
+    margin-left: 80px;
 }
 .history-title{
     font-family: "Tinos",serif;
@@ -260,6 +261,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 100px;
+    padding:40px 0;
 }
 .black-holder{
     display: grid;
@@ -453,22 +455,34 @@ body{
 .gallery-title span{
     color:#D67E34;
 }
-.gallery-images{
-    display: flex;
-    justify-content: center;
-    gap:30px;
-}
-.gallery-down,
 .gallery-up{
-    display:flex;
-    justify-content: space-between;
-    gap:30px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    column-gap: 30px;
+    margin-bottom: 30px;
 }
-.gallery-left,
-.gallery-right{
+.gallery-down{
+    display:grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    column-gap:30px;
+}
+.gallery-images{
+    width:1100px;
+    text-align: center;
+    margin-right: 0px;
+    padding-right: 0px;
+
+}
+.gimg-container{
     display:flex;
-    flex-direction: column;
-    gap:30px;
+    justify-content: center;
+}
+.img-gal .wide{
+    margin:0px;
+}
+.img-gal20{
+}
+.img-gal30{
 }
 .cook-title{
     font-family: "Tinos",serif;
@@ -505,22 +519,19 @@ footer .container{
     .container{
         margin:0px;
     }
-    .gallery-images{
-        display:block;
-    }
-    .img-gal,
     .gallery-up,
     .gallery-down{
-        display:block;
-        margin-left: auto;
-        margin-right: auto;
+        grid-template-columns: 1fr;
+        row-gap: 30px;
     }
-    .img-gal{
+    .wide,
+    .img-gal20,
+    .img-gal30{
+        justify-self: center;
+    }
+    /* .img-gal{
         margin-bottom: 20px;
-    }
-    .gallery-left{
-        margin-left: 0;
-    }
+    } */
     .wide{
         clip-path: inset(0 15% 0 39%);
         margin-right: 125px;
